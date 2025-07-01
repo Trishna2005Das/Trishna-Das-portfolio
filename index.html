@@ -9,7 +9,7 @@
 <body>
 
   <header>
-    <img src="image.jpeg" alt="Trishna Das Photo" class="profile-img">
+    <img src="image.jpeg" alt="Trishna Das" class="profile-img">
     <h1>Trishna Das</h1>
     <p>Bhubaneswar, India | +91 7439523511 | 
       <a href="mailto:trishnadas7897@gmail.com">trishnadas7897@gmail.com</a></p>
@@ -17,64 +17,80 @@
       <a href="https://linkedin.com/in/trishnadas7897" target="_blank">LinkedIn</a> |
       <a href="https://github.com/Trishna2005Das" target="_blank">GitHub</a>
     </p>
+    <button id="toggle-theme">Toggle Dark Mode</button>
   </header>
 
   <main class="container">
-    <section>
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>B.Tech, CSE</strong>, VSSUT, Burla — CGPA: 8.87/10</li>
-        <li><strong>Class XII</strong>, DPS Ruby Park — 93.60%</li>
-        <li><strong>Class X</strong>, Mahadevi Birla — 95.10%</li>
-      </ul>
+    <section class="accordion">
+      <h2 class="accordion-header">🎓 Education</h2>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>B.Tech, CSE</strong>, VSSUT, Burla — CGPA: 8.87/10</li>
+          <li><strong>Class XII</strong>, DPS Ruby Park — 93.60%</li>
+          <li><strong>Class X</strong>, Mahadevi Birla — 95.10%</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>💼 Internship & Experience</h2>
-      <ul>
-        <li><strong>Developer Intern</strong> | Codecis AI (Jan 2025)<br>
-          - Backend for WCM (USA), CRM platform, DevOps setup</li>
-      </ul>
+    <section class="accordion">
+      <h2 class="accordion-header">💼 Internship & Experience</h2>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>WNS (Jun–Aug 2025):</strong> Full-stack AI-powered app with Flask, Angular, MongoDB, OpenAI, LangChain, GitHub Actions</li>
+          <li><strong>Codecis AI (Jan 2025):</strong> Backend Dev for WCM (USA), CRM system, cloud deployment & DevOps pipelines</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>🚀 Key Projects</h2>
-      <ul>
-        <li>IoT Milk Freshness Detector</li>
-        <li>Self-Balancing Bot (LQR)</li>
-        <li>Library System with FastAPI</li>
-        <li>Attendance App with Flutter & Flask</li>
-        <li>AI-Generated Image Detector – PyTorch</li>
-      </ul>
+    <section class="accordion">
+      <h2 class="accordion-header">🚀 Key Projects</h2>
+      <div class="accordion-content">
+        <ul>
+          <li>IoT Milk Freshness Detection – ESP32, sensors, Python-C bridge, MATLAB</li>
+          <li>Self-Balancing Bot – LQR control in CoppeliaSim</li>
+          <li>Library Management System – FastAPI, MySQL</li>
+          <li>Attendance App – Flutter, Flask, QR + fingerprint, MongoDB</li>
+          <li>AI-Generated Image Detection – PyTorch, adversarial robustness</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>🛠️ Skills</h2>
-      <p><strong>Languages:</strong> Python, C++, Java, JavaScript, Dart, SQL</p>
-      <p><strong>Frameworks:</strong> Django, FastAPI, Flask, React, Flutter</p>
-      <p><strong>DevOps:</strong> AWS, Docker, Jenkins, Kubernetes</p>
-      <p><strong>Tools:</strong> Git, MySQL, MongoDB, Tableau, Power BI</p>
+    <section class="accordion">
+      <h2 class="accordion-header">🧠 Technical Skills</h2>
+      <div class="accordion-content">
+        <p><strong>Languages:</strong> Python, C++, Java, JavaScript, Dart, SQL</p>
+        <p><strong>Frameworks:</strong> Flask, Django, FastAPI, React, Flutter</p>
+        <p><strong>DevOps & Cloud:</strong> Docker, Jenkins, AWS, Kubernetes, GitHub Actions</p>
+        <p><strong>Tools:</strong> MongoDB, MySQL, SQLite, Git, Power BI, Tableau, Linux</p>
+        <p><strong>Domains:</strong> IoT, AI/ML, NLP, Data Visualization, Cloud Infrastructure</p>
+      </div>
     </section>
 
-    <section>
-      <h2>📚 Training & Certifications</h2>
-      <ul>
-        <li>IBM SkillsBuild Internship – CSRBOX (2024)</li>
-        <li>Deloitte Forage Program – Jan 2025</li>
-      </ul>
+    <section class="accordion">
+      <h2 class="accordion-header">📚 Certifications</h2>
+      <div class="accordion-content">
+        <ul>
+          <li>IBM Data Science Professional Certificate</li>
+          <li>Deloitte Forage – Data Analysis & Cybersecurity</li>
+          <li>Certified Full Stack Developer (freeCodeCamp/Udemy)</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>🏆 Achievements</h2>
-      <ul>
-        <li>Runner-up – JP Morgan CFG 2025</li>
-        <li>1st – Maze Hunt, Ideathon, SharkTank 2.0</li>
-        <li>60th – e-Yantra Robotics</li>
-        <li>Startup Odisha 2.0 Pitch</li>
-        <li>ML Hackathon Finalist – IIT Bhubaneswar</li>
-      </ul>
+    <section class="accordion">
+      <h2 class="accordion-header">🏆 Achievements & Ranks</h2>
+      <div class="accordion-content">
+        <ul>
+          <li>Runner-up – J.P. Morgan Code for Good 2025</li>
+          <li>Ranked 60th – e-Yantra Robotics Competition (IIT Bombay)</li>
+          <li>1st – Maze Hunt, Ideathon, SharkTank 2.0</li>
+          <li>ML Hackathon Finalist – IIT Bhubaneswar</li>
+          <li>Startup Pitch Presenter – Startup Odisha 2.0</li>
+        </ul>
+      </div>
     </section>
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
